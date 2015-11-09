@@ -11,6 +11,10 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="400" key="height"/>
+		<item value="600" key="width"/>
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 </section>
