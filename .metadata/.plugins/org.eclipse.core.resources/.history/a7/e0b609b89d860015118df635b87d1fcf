@@ -17,8 +17,7 @@ public class MainActivity extends Activity {
         
         messagebutton =  (Button) findViewById(R.id.buttonmessage);
         
-        messagebutton.setOnClickListener(new OnClickListener()
-        {
+        messagebutton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) 
