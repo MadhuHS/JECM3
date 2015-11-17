@@ -1,9 +1,8 @@
 package com.jspiders.buttonview;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,6 +32,7 @@ public class MainActivity extends Activity implements OnClickListener {
         
         displayred.setOnClickListener(MainActivity.this);
         displayblue.setOnClickListener(MainActivity.this);
+     
     }
 	
 	public void displaymessage(View v)
@@ -40,6 +40,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		String inputmessage = inputedittext.getText().toString();
 		inputedittext.setText("");
 		outputtextview.setText(inputmessage);
+
 	}
 
 	@Override
@@ -61,12 +62,4 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-    
 }
