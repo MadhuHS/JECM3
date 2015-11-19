@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:hint="Input a value" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="StartActivity" />
+
+    <Button
+        android:id="@+id/buttongetresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonstart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="StartActivityForResult" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttongetresult"
+        android:layout_marginTop="58dp"
+        android:text="No Message Recieved"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
