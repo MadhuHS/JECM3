@@ -1,0 +1,27 @@
+package com.jsp.gridview;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+
+public class MainActivity extends Activity {
+
+    GridView phonesgriGridView;
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        final String[] phones = {"SONY","HTC","MI","MOTO","MICROMAX","SAMSUNG","APPLE","OPPO","INTEX","NOKIA","PANASONIC","LAVA"};
+
+        phonesgriGridView = (GridView) findViewById(R.id.gridViewphones);
+    
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1,phones);
+        phonesgriGridView.setAdapter(adapter);
+	
+	}
+
+    
+}

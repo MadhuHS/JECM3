@@ -1,0 +1,23 @@
+package com.jsp.listview;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.ListView;
+
+public class MainActivity extends Activity {
+
+    ListView phoneslistview;
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        String[] phones = {"SONY","HTC","MI","MOTO","MICROMAX","SAMSUNG","APPLE","OPPO","INTEX","NOKIA","PANASONIC","LAVA"};
+        
+        
+        
+    }
+    
+}
