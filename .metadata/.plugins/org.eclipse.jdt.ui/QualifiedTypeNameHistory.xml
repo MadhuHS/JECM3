@@ -29,11 +29,9 @@
 <fullyQualifiedTypeName name="com.jsp.intents2.MainActivity"/>
 <fullyQualifiedTypeName name="com.jsp.intents2.SecondActivity"/>
 <fullyQualifiedTypeName name="android.widget.EditText"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="com.jspiders.implicitintents.R.id"/>
 <fullyQualifiedTypeName name="android.net.Uri"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.provider.MediaStore"/>
 <fullyQualifiedTypeName name="com.jspiders.implicitintents.MainActivity"/>
@@ -50,4 +48,14 @@
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="com.jsp.gridview.MainActivity"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.app.Fragment"/>
+<fullyQualifiedTypeName name="com.jsp.fragments_demo.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
+<fullyQualifiedTypeName name="com.jsp.dynamic_fragments.R.layout"/>
+<fullyQualifiedTypeName name="com.jsp.dynamic_fragments.R.id"/>
+<fullyQualifiedTypeName name="com.jsp.dynamic_fragments.DynamicFragments_Demo"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
 </qualifiedTypeNameHistroy>

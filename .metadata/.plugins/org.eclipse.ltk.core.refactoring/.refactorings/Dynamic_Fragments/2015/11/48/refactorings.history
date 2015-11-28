@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;button1&apos; in &apos;com.jsp.dynamic_fragments.R.id&apos; to &apos;buttonaddfragment&apos;&#x0D;&#x0A;- Original project: &apos;Dynamic_Fragments&apos;&#x0D;&#x0A;- Original element: &apos;com.jsp.dynamic_fragments.R.id.button1&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jsp.dynamic_fragments.R.id.buttonaddfragment&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;button1&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.jsp.dynamic_fragments{R.java[R[id^button1" name="buttonaddfragment" references="true" setter="false" stamp="1448597825554" textual="false" version="1.0"/>
+</session>
