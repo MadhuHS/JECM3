@@ -1,0 +1,49 @@
+package com.jsp.multipanefragments;
+
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
+import android.os.Bundle;
+
+public class MainActivity extends Activity implements Communicator{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		
+         if  (findViewById(R.id.fragement_container)!=null)
+        	 
+         {
+        	 Version_List list = new Version_List();
+        	 list.setArguments(getIntent().getExtras());
+        	 getFragmentManager().beginTransaction().add(R.id.fragement_container, list).commit();
+   
+         }
+	}
+
+	@Override
+	public void respond(int position) 
+	{
+		Description_Versions descriptonfragment =  (Description_Versions) getFragmentManager().findFragmentById(R.id.description_fragment);
+		if(descriptonfragment!=null)
+		{
+			descriptonfragment.changedescription(position);
+		}
+		
+		else
+		{
+			Description_Versions description_Versions = new Description_Versions();
+			Bundle bundle = new Bundle();
+			bundle.putInt("position", position);
+			description_Versions.setArguments(bundle);
+			FragmentTransaction transaction = getFragmentManager().beginTransaction();
+			transaction.replace(R.id.fragement_container,description_Versions);
+			transaction.addToBackStack(null);
+			transaction.commit();
+		}
+		
+	}
+
+}

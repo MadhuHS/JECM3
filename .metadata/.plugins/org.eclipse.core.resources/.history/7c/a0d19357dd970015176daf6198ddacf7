@@ -1,0 +1,6 @@
+package com.jsp.multipanefragments;
+
+public interface Communicator 
+{
+
+}

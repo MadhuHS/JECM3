@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tab_fragment_container"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    
+    <fragment 
+        android:id="@+id/list_fragment"
+        android:layout_height="match_parent"
+        android:name="com.jsp.multipanefragments.Version_List"
+        android:layout_weight="1"
+        />
+    
+    <fragment 
+        android:id="@+id/description_fragment"
+        android:layout_height="match_parent"
+        android:name="com.jsp.multipanefragments.Description_Versions"
+        android:layout_weight="2"
+        />
+    
+    
+
+</LinearLayout>

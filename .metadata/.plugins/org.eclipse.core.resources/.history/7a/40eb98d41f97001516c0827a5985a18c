@@ -1,0 +1,7 @@
+package com.jsp.multipanefragments;
+
+import android.app.Fragment;
+
+public class Description_Versions extends Fragment {
+
+}
