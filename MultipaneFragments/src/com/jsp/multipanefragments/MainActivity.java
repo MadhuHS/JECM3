@@ -1,7 +1,6 @@
 package com.jsp.multipanefragments;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,12 +41,18 @@ public class MainActivity extends Activity implements Communicator {
 		
 		else
 		{
-			Description_Versions descfrag = new Description_Versions();
-			
-			FragmentTransaction transaction = getFragmentManager().beginTransaction(); 
-		    transaction.replace(R.id.fragement_container,descfrag);
-		    transaction.addToBackStack(null);
-		    transaction.commit();
+		     //initializing the descfragment with selected position value
+			 Description_Versions descfragment = new Description_Versions();
+			 Bundle arguments = new Bundle();
+			 
+			 arguments.putInt("position_selected", position);
+			 descfragment.setArguments(arguments);
+	         
+			 
+			 FragmentTransaction transaction = getFragmentManager().beginTransaction();
+			 transaction.replace(R.id.fragement_container, descfragment);
+			 transaction.addToBackStack(null);
+			 transaction.commit();
 		}
 		
 		

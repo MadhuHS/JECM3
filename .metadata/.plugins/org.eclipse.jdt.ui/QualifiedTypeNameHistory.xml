@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.widget.RadioGroup"/>
 <fullyQualifiedTypeName name="android.widget.RadioGroup.OnCheckedChangeListener"/>
 <fullyQualifiedTypeName name="com.jsp.radiobuttonsdemo.R.id"/>
 <fullyQualifiedTypeName name="android.widget.CheckBox"/>
@@ -49,7 +48,6 @@
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.R.layout"/>
 <fullyQualifiedTypeName name="android.webkit.WebView.FindListener"/>
 <fullyQualifiedTypeName name="android.view.View"/>
-<fullyQualifiedTypeName name="android.os.Bundle"/>
 <fullyQualifiedTypeName name="android.app.FragmentManager"/>
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.Version_List"/>
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.Communicator"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.R.id"/>
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.Description_Versions"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
 </qualifiedTypeNameHistroy>
