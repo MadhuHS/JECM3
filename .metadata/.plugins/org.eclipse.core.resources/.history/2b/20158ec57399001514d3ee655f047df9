@@ -1,0 +1,21 @@
+package com.jspiders.notifications_demo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	Button notifybutton;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		notifybutton = (Button) findViewById(R.id.buttonnotify);
+		
+		
+	}
+
+
+}
