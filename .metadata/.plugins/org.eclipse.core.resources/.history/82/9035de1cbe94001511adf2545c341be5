@@ -1,7 +1,0 @@
-package com.jsp.dynamic_fragments;
-
-import android.app.Fragment;
-
-public class DynamicFragments_Demo extends Fragment {
-
-}

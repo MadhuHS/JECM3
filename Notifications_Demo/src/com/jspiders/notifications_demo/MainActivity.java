@@ -3,8 +3,12 @@ package com.jspiders.notifications_demo;
 import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.text.style.BulletSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -29,6 +33,20 @@ public class MainActivity extends Activity {
                  	builder.setContentText("New Notification");
                  	builder.setSmallIcon(R.drawable.ic_launcher);
                
+                 	Intent callintent = new Intent(Intent.ACTION_DIAL);
+                 	callintent.setData(Uri.parse("tel:"+"555212321"));
+                 	
+                 	PendingIntent callpendingIntent = PendingIntent.
+ 			                getActivity(MainActivity.this,1,callintent,0);
+                 	
+                 	builder.addAction(R.drawable.ic_launcher,"Call",callpendingIntent);
+                 	builder.addAction(R.drawable.ic_launcher,"SMS",null);
+                 	
+                 	Intent pintent = new Intent(MainActivity.this, SecondActivity.class);
+                 	PendingIntent pendingIntent = PendingIntent.
+                 			                getActivity(MainActivity.this,1,pintent,0);
+                 	builder.setContentIntent(pendingIntent);
+                 	
                  	Notification notification = builder.build();
                  	
                  	

@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.jsptogglebutton.MainActivity"/>
-<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemSelectedListener"/>
-<fullyQualifiedTypeName name="android.app.Activity"/>
-<fullyQualifiedTypeName name="com.jsptogglebutton.R.layout"/>
-<fullyQualifiedTypeName name="com.jsp.intentsdemo.MainActivity"/>
-<fullyQualifiedTypeName name="com.jsp.intentsdemo.SecondActivity"/>
-<fullyQualifiedTypeName name="com.jsp.returnsvalue.MainActivity"/>
-<fullyQualifiedTypeName name="com.jsp.returnsvalue.SecondActivity"/>
-<fullyQualifiedTypeName name="com.jsp.intents2.MainActivity"/>
-<fullyQualifiedTypeName name="com.jsp.intents2.SecondActivity"/>
-<fullyQualifiedTypeName name="android.widget.EditText"/>
-<fullyQualifiedTypeName name="com.jspiders.implicitintents.R.id"/>
-<fullyQualifiedTypeName name="android.net.Uri"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="android.provider.MediaStore"/>
 <fullyQualifiedTypeName name="com.jspiders.implicitintents.MainActivity"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
@@ -26,7 +12,6 @@
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="com.jsp.gridview.MainActivity"/>
 <fullyQualifiedTypeName name="com.jsp.fragments_demo.R.layout"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="com.jsp.dynamic_fragments.R.layout"/>
 <fullyQualifiedTypeName name="com.jsp.dynamic_fragments.R.id"/>
 <fullyQualifiedTypeName name="com.jsp.dynamic_fragments.DynamicFragments_Demo"/>
@@ -51,13 +36,28 @@
 <fullyQualifiedTypeName name="com.jsp.multipanefragments.Description_Versions"/>
 <fullyQualifiedTypeName name="android.os.Bundle"/>
 <fullyQualifiedTypeName name="android.content.BroadcastReceiver"/>
-<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.example.broadcastrecvr_demo.MainActivity"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat"/>
 <fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat.Builder"/>
-<fullyQualifiedTypeName name="com.jspiders.notifications_demo.MainActivity"/>
-<fullyQualifiedTypeName name="com.jspiders.notifications_demo.R.drawable"/>
 <fullyQualifiedTypeName name="android.app.NotificationManager"/>
 <fullyQualifiedTypeName name="android.app.Notification"/>
+<fullyQualifiedTypeName name="com.jspiders.notifications_demo.MainActivity"/>
+<fullyQualifiedTypeName name="android.text.style.BulletSpan"/>
+<fullyQualifiedTypeName name="com.jspiders.notifications_demo.SecondActivity"/>
+<fullyQualifiedTypeName name="android.app.PendingIntent"/>
+<fullyQualifiedTypeName name="com.jspiders.notifications_demo.R.drawable"/>
+<fullyQualifiedTypeName name="android.net.Uri"/>
+<fullyQualifiedTypeName name="android.app.Application"/>
+<fullyQualifiedTypeName name="com.parse.Parse"/>
+<fullyQualifiedTypeName name="com.parse.ParseInstallation"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.jsp.servicesdemo.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.app.Service"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.jsp.servicesdemo.MainActivity"/>
+<fullyQualifiedTypeName name="android.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="com.jsp.servicesdemo.MyService"/>
+<fullyQualifiedTypeName name="com.jsp.servicesdemo.R.raw"/>
 </qualifiedTypeNameHistroy>
