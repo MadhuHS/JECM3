@@ -1,7 +1,0 @@
-package com.example.broadcastrecvr_demo;
-
-import android.content.BroadcastReceiver;
-
-public class MyReciever extends BroadcastReceiver {
-
-}

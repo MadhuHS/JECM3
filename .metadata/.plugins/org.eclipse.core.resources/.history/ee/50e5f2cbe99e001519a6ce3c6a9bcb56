@@ -1,0 +1,13 @@
+package com.jsp.servicesdemo;
+
+import android.app.IntentService;
+
+public class MyIntentservice extends IntentService {
+
+	public MyIntentservice(String name) 
+	{
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+}

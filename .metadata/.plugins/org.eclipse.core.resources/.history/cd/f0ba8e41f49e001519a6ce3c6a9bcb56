@@ -1,0 +1,28 @@
+package com.jsp.asynctask_demo;
+
+import android.os.AsyncTask;
+
+public class Network_Demo extends AsyncTask<Void, Void, Void> 
+{
+
+	@Override
+	protected void onPreExecute() 
+	{
+		super.onPreExecute();
+	}
+	
+	
+	@Override
+	protected Result doInBackground(Params... arg0) 
+	{
+		
+		return null;
+	}
+	
+	
+on
+	
+	
+	protected void onPostExecute(Result result) {};
+
+}
