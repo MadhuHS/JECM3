@@ -1,0 +1,40 @@
+package com.jsp.networking;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import android.os.AsyncTask;
+import android.widget.ImageView;
+
+public class NetworkOps extends AsyncTask<Void, Void,Void> 
+{
+	ImageView Asyncnetworkimage;
+	
+	NetworkOps (ImageView networkimage)
+	{
+		Asyncnetworkimage = networkimage;
+	}
+
+	@Override
+	protected Void doInBackground(Void... arg0) 
+	{
+		try 
+		{
+			URL imgurl = new URL("http://i.dailymail.co.uk/i/pix/2013/08/28/article-2404712-1B815F79000005DC-228_306x423.jpg");
+		} 
+		
+		catch (MalformedURLException e) 
+		{
+			
+			e.printStackTrace();
+		}	
+		return null;
+	}
+
+	@Override
+	protected void onPostExecute(Void result) 
+	{
+		
+		super.onPostExecute(result);
+	}
+}

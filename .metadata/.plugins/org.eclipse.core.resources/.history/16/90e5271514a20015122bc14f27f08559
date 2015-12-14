@@ -1,0 +1,29 @@
+package com.jsp.networking;
+
+import android.os.AsyncTask;
+import android.widget.ImageView;
+
+public class NetworkOps extends AsyncTask<Void, Void,Void> 
+{
+	ImageView Asyncnetworkimage;
+	
+	NetworkOps (ImageView networkimage)
+	{
+		Asyncnetworkimage = networkimage;
+	}
+
+	@Override
+	protected Void doInBackground(Void... arg0) 
+	{
+		
+		
+		return null;
+	}
+
+	@Override
+	protected void onPostExecute(Void result) 
+	{
+		
+		super.onPostExecute(result);
+	}
+}

@@ -1,0 +1,21 @@
+package com.jsp.networking;
+
+import android.os.AsyncTask;
+
+public class NetworkOps extends AsyncTask<Void, Void,Void> 
+{
+
+	@Override
+	protected Void doInBackground(Void... arg0) 
+	{
+		
+		return null;
+	}
+
+	@Override
+	protected void onPostExecute(Void result) 
+	{
+		
+		super.onPostExecute(result);
+	}
+}
