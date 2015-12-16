@@ -1,0 +1,15 @@
+package com.jsp.weatherupdates;
+
+import android.os.AsyncTask;
+
+public class Netwrok_Job extends AsyncTask<Void,Void,Void> 
+
+{
+
+	@Override
+	protected Void doInBackground(Void... params) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

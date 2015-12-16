@@ -1,0 +1,14 @@
+package com.jsp.weatherupdates;
+
+public class JsonParser 
+{
+
+    public static String processjson(String jsondata)
+    {
+    	
+    	
+    	
+    	return null;
+    }
+
+}

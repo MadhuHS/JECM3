@@ -1,0 +1,27 @@
+package com.jsp.weatherupdates;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class JsonParser 
+{
+
+    public static String processjson(String jsondata)
+    {
+    	
+    	try 
+    	{
+			JSONObject rootobject = new JSONObject(jsondata);
+			
+			log.d("[DEBUG]",rootobject.getString("name"));
+		} 
+    	
+    	catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    	return null;
+    }
+
+}
