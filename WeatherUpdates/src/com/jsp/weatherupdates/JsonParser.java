@@ -1,5 +1,6 @@
 package com.jsp.weatherupdates;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,6 +22,14 @@ public class JsonParser
 			
 			
 			JSONObject mainobject = rootobject.getJSONObject("main");
+		
+			/*	JSONArray listarray = rootobject.getJSONArray("list");
+			
+			for(int i=0;i<=listarray.length();i++)
+			{
+				
+			}
+			*/
 			Log.d("[DEBUG]",""+mainobject.getDouble("temp"));
 			
 			b1 = new Bundle();

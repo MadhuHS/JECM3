@@ -26,17 +26,8 @@
         android:layout_below="@+id/editTextusername"
         android:layout_marginTop="36dp"
         android:ems="10"
+        android:inputType="textPassword"
         android:hint="Password" />
-
-    <Button
-        android:id="@+id/buttonlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextpassword"
-        android:layout_below="@+id/editTextpassword"
-        android:layout_marginTop="49dp"
-        android:onClick="testbutton"
-        android:text="Login" />
 
     <Button
         android:id="@+id/buttoncancel"
@@ -46,5 +37,35 @@
         android:layout_alignRight="@+id/editTextpassword"
         android:onClick="testcancelbutton"
         android:text="Cancel" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBoxremeberpassword"
+        android:layout_below="@+id/checkBoxremeberpassword"
+        android:layout_marginTop="17dp"
+        android:onClick="testbutton"
+        android:text="Login" />
+
+    <CheckBox
+        android:id="@+id/checkBoxremeberpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextpassword"
+        android:layout_below="@+id/editTextpassword"
+        android:layout_marginTop="24dp"
+        android:text="Remember Password" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonlogin"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_marginTop="29dp"
+        android:onClick="cleardata"
+        android:text="Clear Credentials" />
 
 </RelativeLayout>

@@ -16,6 +16,7 @@ public class Netwrok_Job extends AsyncTask<Void,Void,Void>
 {
 	URL updateurl;
 	HttpURLConnection connection;
+	 Bundle responsebundle;
 	
 	
 	
@@ -29,6 +30,8 @@ public class Netwrok_Job extends AsyncTask<Void,Void,Void>
 		    InputStream ins =  connection.getInputStream();
 		    
 		    InputStreamReader insr = new InputStreamReader(ins);
+		    
+		  
 		    
 		    BufferedReader reader = new BufferedReader(insr);
 		    
@@ -44,7 +47,7 @@ public class Netwrok_Job extends AsyncTask<Void,Void,Void>
 		    String response =  buffer.toString(); 
 		    
 		    Log.d("[DEBUG]", response);
-		    Bundle responsebundle= JsonParser.processjson(response);
+		    responsebundle= JsonParser.processjson(response);
 		    
 		    
 		} 
@@ -59,6 +62,13 @@ public class Netwrok_Job extends AsyncTask<Void,Void,Void>
 			e.printStackTrace();
 		}
 		return null;
+	}
+	
+	@Override
+	protected void onPostExecute(Void result) 
+	{
+	
+		super.onPostExecute(result);
 	}
 
 }
