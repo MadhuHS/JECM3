@@ -1,0 +1,67 @@
+package com.jsp.internalstorage;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	Button readbutton,savebutton;
+	EditText inputedittext;
+	TextView displaytextview;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		savebutton = (Button) findViewById(R.id.buttonsave);
+		readbutton = (Button) findViewById(R.id.buttonread);
+		inputedittext = (EditText) findViewById(R.id.editTextinput);
+		displaytextview = (TextView) findViewById(R.id.textViewoutput);
+		
+		savebutton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) 
+			{
+				String inputdata = inputedittext.getText().toString();
+				
+				try 
+				{
+					FileOutputStream fos = openFileOutput("Demo1",Context.MODE_PRIVATE);
+					fos.write(inputdata.getBytes());
+				} 
+				
+				catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+			}
+		});
+		
+		
+		readbutton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) 
+			{
+				
+				
+			}
+		});
+		
+	}
+
+
+}

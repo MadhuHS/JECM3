@@ -1,0 +1,27 @@
+package com.jsp.internalstorage;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	Button readbutton,savebutton;
+	EditText inputedittext;
+	TextView displaytextview;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		savebutton = (Button) findViewById(R.id.buttonsave);
+		readbutton = (Button) findViewById(R.id.buttonread);
+		
+		
+	}
+
+
+}

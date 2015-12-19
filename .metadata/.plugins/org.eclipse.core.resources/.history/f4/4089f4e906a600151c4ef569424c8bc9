@@ -1,0 +1,30 @@
+package com.jsp.externalstorage;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	Button readbutton,savebutton;
+	EditText inputedittext;
+	TextView displaytextview;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		readbutton = (Button) findViewById(R.id.buttonread);
+		savebutton = (Button) findViewById(R.id.buttonsave);
+		inputedittext = (EditText) findViewById(R.id.editTextinput);
+		displaytextview = (TextView) findViewById(R.id.textViewoutput);
+		
+		
+		
+	}
+
+
+}
