@@ -1,0 +1,41 @@
+package com.jspiders.sqlitedemo;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+public class DBoperations extends SQLiteOpenHelper {
+
+	String createtableqry = "create table List (Name Text,qty Text);";
+	
+	public DBoperations(Context context) 
+	{
+		super(context,"DB1",null,1);
+		
+		
+		Log.d("[DEBUG]", "DB Created ");
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase sqldb) 
+	{
+		sqldb.execSQL(createtableqry);
+		Log.d("[DEBUG]", "Table created");	
+	}
+
+	public void insertdata()
+	{
+		
+	}
+	
+	
+	
+	
+	@Override
+	public void onUpgrade(SQLiteDatabase arg0, int arg1, int arg2) 
+	{
+		
+	}
+
+}
