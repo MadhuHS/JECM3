@@ -1,0 +1,20 @@
+<android.support.v4.widget.DrawerLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >  
+    
+    <FrameLayout android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+    
+    <ListView android:id="@+id/list1"
+        android:background="#ecdc3c"
+        android:layout_width="240dp"
+         android:layout_height="match_parent"
+        android:layout_gravity="left" >
+        
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
