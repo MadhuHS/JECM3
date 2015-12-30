@@ -25,6 +25,9 @@
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
+	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="400" key="height"/>
 		<item value="600" key="width"/>
@@ -33,7 +36,7 @@
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
-		<item value="false" key="create_main"/>
+		<item value="true" key="create_main"/>
 		<item value="true" key="create_unimplemented"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">

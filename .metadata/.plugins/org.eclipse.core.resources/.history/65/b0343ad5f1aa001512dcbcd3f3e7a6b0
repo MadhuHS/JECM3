@@ -1,0 +1,20 @@
+package com.EmpDb.login;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class StoredProcedures {
+
+	
+	public static void main(String[] args) 
+	{
+		//step1 load and register the driver
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		//step2 establish connection
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","tiger");
+		
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.EmpDb.login;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DBlogin 
+{
+	
+	public static void main(String[] args) 
+	{
+		try 
+		{
+			//step1 load and register the driver
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			//step2 establish connection
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","tiger");
+			
+			//create a platform or statement
+			Statement statement = conn.createStatement();
+		} 
+		
+		catch (ClassNotFoundException e) 
+		{
+			e.printStackTrace();
+		} 
+		
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

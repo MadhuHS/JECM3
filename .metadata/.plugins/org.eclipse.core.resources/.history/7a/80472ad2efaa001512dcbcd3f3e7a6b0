@@ -1,0 +1,11 @@
+package com.EmpDb.login;
+
+public class PrepBasic {
+
+	public static void main(String[] args) 
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.EmpDb.login;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class SP_Retinfo {
+
+	
+	public static void main(String[] args) 
+	{
+		String sql = "{call db1.Insertvalues(?,?,?)}";
+		//step1 load and register the driver
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		//step2 establish connection
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","tiger");
+		
+		//step3 get object callable statment
+		CallableStatement cstmnt = conn.prepareCall(sql);
+
+	}
+
+}

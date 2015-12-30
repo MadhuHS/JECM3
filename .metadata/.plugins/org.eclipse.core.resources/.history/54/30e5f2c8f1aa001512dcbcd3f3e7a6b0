@@ -1,0 +1,12 @@
+package com.EmpDb.login;
+
+public class StoredProcedures {
+
+	
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}

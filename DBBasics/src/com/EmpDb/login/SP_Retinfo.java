@@ -1,0 +1,53 @@
+package com.EmpDb.login;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
+import java.util.Scanner;
+
+public class SP_Retinfo {
+
+	
+	public static void main(String[] args) 
+	{
+		String sql = "{call db1.Retriveinfo(?,?)}";
+		
+		try {
+			//step1 load and register the driver
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			//step2 establish connection
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","tiger");
+			
+			//step3 get object callable statment
+			CallableStatement cstmnt = conn.prepareCall(sql);
+			
+			//Scanner scanner  = new Scanner(System.in);
+			//System.out.println("Enter ID");
+			cstmnt.setInt(1,2);
+			//scanner.close();
+			cstmnt.registerOutParameter(2,Types.VARCHAR);
+			/*ResultSet resultSet = cstmnt.executeQuery();
+			System.out.println("Name is "+resultSet.getString(2)); */
+			cstmnt.execute();
+			String name=cstmnt.getString(2);
+			System.out.println(name);
+			
+			
+			
+		} 
+		
+		catch (ClassNotFoundException | SQLException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+
+	}
+
+}
